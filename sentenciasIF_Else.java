@@ -10,7 +10,7 @@ public class sentenciasIF_Else {
             Mensajes = "Felicitaciones, Excelente promedio!";
 
         } else if (promedio >= 6.0) {
-            System.out.println("Muy Buen Promedio!");
+            Mensajes = "Muy Buen Promedio!";
         } else if (promedio >= 5.5) {
             Mensajes = " Buen Promedio";
         } else if (promedio >= 4.0) {
