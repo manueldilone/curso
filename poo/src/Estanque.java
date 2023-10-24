@@ -1,10 +1,12 @@
 public class Estanque {
     private int Capacidad;
 
+    Estanque() {
 
-    Estanque(){
         this.Capacidad = 40;
+
     }
+
     public int getCapacidad() {
         return Capacidad;
     }
@@ -13,4 +15,3 @@ public class Estanque {
         Capacidad = capacidad;
     }
 }
-
