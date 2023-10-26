@@ -1,5 +1,6 @@
 public class Automovil {
 
+    int i;
     private String modelo;
     private String fabricante;
     private Motor motor;
@@ -42,11 +43,11 @@ public class Automovil {
 
     private int id;
 
-    Automovil(String fabricante, String modelo, Estanque est) {
+    Automovil(String fabricante, String modelo, Color colo) {
 
         this.fabricante = fabricante;
         this.modelo = modelo;
-        this.Estanque = est;
+        this.color = colo;
 
     }
 
@@ -92,6 +93,12 @@ public class Automovil {
 
     public void setRuedas(Rueda[] ruedas) {
         this.ruedas = ruedas;
+    }
+
+    public void addRuedas(Rueda rueda) {
+
+        this.ruedas[i++] = rueda;
+
     }
 
     public String verDetalle() {
