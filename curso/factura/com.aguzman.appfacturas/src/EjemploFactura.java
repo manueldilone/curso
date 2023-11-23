@@ -25,28 +25,24 @@ public class EjemploFactura {
 
         factura _factura = new factura(desc,_cliente);
 
-        String nombre;
-        Double precio;
-        int cantidad;
+
+
+
+
         for(int i=0; i<2; i++){
 
             _producto = new producto();
             System.out.println("Ingrese producto numero: "+ _producto.getCodigo());
-            nombre = scan.nextLine();
-            _producto.setNombre(nombre);
+            _producto.setNombre(scan.nextLine());
 
             System.out.println("Ingrese Precio del producto numero: "+ _producto.getCodigo());
-            precio = scan.nextDouble();
-            _producto.setPrecio(precio);
+
+            _producto.setPrecio(scan.nextDouble());
 
             System.out.println("Ingrese Cantidad");
-            cantidad=scan.nextInt();
 
 
-
-
-            itemFactura _itemFactura=new itemFactura(cantidad,_producto);
-            _factura.setaddItemFactura(_itemFactura);
+            _factura.setaddItemFactura(new itemFactura(scan.nextInt(),_producto));
 
 
             System.out.println();
