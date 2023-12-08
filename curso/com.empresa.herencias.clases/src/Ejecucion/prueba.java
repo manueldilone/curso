@@ -7,16 +7,10 @@ public class prueba {
     public static void main(String[] args) {
 
 
-        ppdetalle _ppdetalle = new ppdetalle();
-        _ppdetalle.GuardarRegistro();
-
-
-
-
-
-
-
+        System.err.println(vv());
 
 
     }
+
+    public static String vv()= (me) -> return "Hola";
 }
